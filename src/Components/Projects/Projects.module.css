@@ -1,0 +1,119 @@
+.work_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 12%;
+}
+
+.work_wrapper h1{
+  margin-bottom: 30px;
+  font-size: 45px;
+}
+
+.work_wrapper p{
+  color: #fff;
+}
+
+.work_card_wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.work_filter_wrapper{
+  width: 40%;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+  background-color: #000;
+  border-radius: 30px;
+}
+
+.work_filter_wrapper .filter{
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 30px;
+  justify-content: center;
+}
+
+.activeFilter{
+  background: #8750f7;
+  background: linear-gradient(to right, #8750f7, #000 140%);
+}
+
+.workImages{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.workImages:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 200px;
+  width: 200px;
+  background-color: #8750f7;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -1;
+}
+
+.workImages .workImg{
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #241541;
+  position: relative;
+}
+
+.workImages .workImg:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(17deg, #7e4fdb -50%, transparent 50%);
+  border-radius: 8px;
+  opacity: 0;
+  transition: .6s;
+}
+
+.workImages .workImg:hover:after{
+  opacity: 1;
+}
+
+.workImages .workImg img{
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .work_filter_wrapper .filter{
+    height: 60px;
+    width: 100%;
+  }
+  .work_filter_wrapper{
+    height: fit-content;
+  }
+
+  .workImages{
+    grid-template-columns: repeat(1,1fr);
+  }
+}

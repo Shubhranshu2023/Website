@@ -1,0 +1,67 @@
+.Skills_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 12%;
+}
+
+.Skills_wrapper p{
+  color: #fff;
+}
+
+.Skills_card_wrapper{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  width: 100%;
+  margin-top: 50px;
+}
+
+.Skills_card{
+  width: 85%;
+  height: fit-content;
+  padding: 30px 25px;
+  border-radius: 12px;
+  background-color: #1b0f33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #1b0f33;
+  gap: 20px;
+  color: #fff;
+  transition: .6s;
+}
+
+.Skills_card_wrapper .Skills_card img{
+  width: 50px;
+  height: 50px;
+  transition: .6s;
+}
+
+@media screen and (max-width: 1400px) {
+  .Skills_card_wrapper{
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    place-items: center;
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+  .Skills_card_wrapper{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Skills_card_wrapper{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width: 768) {
+  .Skills_card_wrapper{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
