@@ -189,12 +189,16 @@
 }
 
 @media screen and (max-width:768px) {
+  .content p{
+    font-size: 15px;
+  }
   
   .content h1{
     width: 100%;
   }
 
   .home_btn{
+    flex-direction: column;
     width: 100%;
   }
 }
