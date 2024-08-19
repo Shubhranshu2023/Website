@@ -33,19 +33,13 @@ const Header = () => {
                 ></i>
               </a>
               <a href="https://github.com/Shubhranshu2023">
-                <i className="fa-brands fa-github">
-                  <a href=""></a>
-                </i>
+                <i className="fa-brands fa-github"></i>
+              </a>
+              <a href="https://x.com/ShubhranshPanda">
+                <i className="fa-brands fa-twitter"></i>
               </a>
               <a href="">
-                <i className="fa-brands fa-twitter">
-                  <a href=""></a>
-                </i>
-              </a>
-              <a href="">
-                <i className="fa-brands fa-instagram">
-                  <a href=""></a>
-                </i>
+                <i className="fa-brands fa-instagram"></i>
               </a>
             </div>
           </div>
