@@ -19,9 +19,6 @@ const Projects = () => {
             <div className={`${workCSS.filter} ${workCSS.activeFilter}`}>
               <p>All</p>
             </div>
-            <div className={workCSS.filter}>
-              <p>Web Development</p>
-            </div>
           </div>
 
           <div className={workCSS.workImages}>
