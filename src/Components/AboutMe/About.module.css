@@ -1,104 +1,53 @@
-.aboutMe{
-  color: #fff;
-  font-size: 45px;
+.sliderContainer {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
-  font-weight: 600;
-  background: linear-gradient(to right,#8750f5 0%, #fff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.about{
-  display: flex;
-  padding: 80px 0;
-  justify-content: space-between;
-  padding: 5% 12%;
-  align-items: center;
-  position: relative;
+
+.card {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  background-color: #190e2d;
+  border: 2px solid #190e2d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.aboutImage{
-  width: 45%;
-  height: 100%;
-  border: 2px solid #8750f5;
-  border-radius: 40px;
-  transform: .6s;
-  overflow: hidden;
-  position: relative;
-}
-
-.aboutImage img{
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.aboutContent{
-  margin-left: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.title {
   color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.aboutContent h3{
-  font-size: 2.5rem;
-  font-weight: 500;
+.details {
+  color: #8750f5;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
-.aboutContent p{
-  font-size: 20px;
-  width: 80%;
-  margin: 20px 0;
+.description {
+  font-size: 1rem;
+  color: #0ef;
+  margin-top: 10px;
 }
 
-.aboutBtn{
-  display: flex;
-  width: 80%;
-  gap: 40px;
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .sliderContainer{
+    padding: 40px;
+  }
+  .card {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
 }
-
-@media screen and (max-width: 1400px) {
-  .aboutImage{
-    width: 55%;
-  }
-
-  .aboutContent h3{
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .aboutContent h3{
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 1024px){
-
-
-  .aboutImage{
-    margin-top: 50px;
-    width: 50%;
-  }
-
-  .aboutContent p{
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .aboutImage{
-    flex-direction: column;
-  }
-  .aboutContent h3{
-    width: 100%;
-  }
-
-  .aboutBtn{
-    width: 100%;
-  }
-}
-
