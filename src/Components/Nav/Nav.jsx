@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import navCSS from "./../Nav/Nav.module.css";
 import logo from "./../../assets/logo.png";
-import resume from "./../../Resume/MyResume.pdf";
+import resume from "./../../Resume/Shubhranshu_Shekhar_Panda_Resume.pdf";
 
 const Nav = () => {
   const menu = useRef();
@@ -32,7 +32,7 @@ const Nav = () => {
           <li>
             <a href="#contact">Contact</a>
           </li>
-          <a href={resume} download="MyResume.pdf">
+          <a href={resume} download="Shubhranshu_Shekhar_Panda_Resume.pdf">
             <button>Resume</button>
           </a>
         </ul>
