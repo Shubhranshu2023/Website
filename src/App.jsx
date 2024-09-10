@@ -10,11 +10,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import EducationSlider from "./Components/AboutMe/EducationSlider";
 
-
 function App() {
   return (
     <>
-        <Nav />
+      <Nav />
       <main>
         <Header />
         <EducationSlider />
