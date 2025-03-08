@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import navCSS from "./../Nav/Nav.module.css";
 import logo from "./../../assets/logo.png";
-import resume from "./../../Resume/Shubhranshu_Shekhar_Panda_Resume.pdf";
+import resume from "./../../Resume/Shubhranshu_Shekhar_Panda_Resume(3).pdf";
 
 const Nav = () => {
   const menu = useRef();
